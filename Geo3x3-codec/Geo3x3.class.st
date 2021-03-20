@@ -60,7 +60,7 @@ Geo3x3 class >> decode: codeIntOrStr [
 
 ]
 
-{ #category : #ecncoding }
+{ #category : #encoding }
 Geo3x3 class >> encodeLatitude: latNum andLongitude: lngNum withLevel: level [
 	| lat lng |
 	level < 1 ifTrue: [^''].
@@ -84,7 +84,7 @@ Geo3x3 class >> encodeLatitude: latNum andLongitude: lngNum withLevel: level [
 	]
 ]
 
-{ #category : #ecncoding }
+{ #category : #encoding }
 Geo3x3 class >> encodeToIntFromLatitude: lat andLongitude: lng withLevel: level [
 	| code result |
 	code := self encodeLatitude: lat andLongitude: lng withLevel: level.
